@@ -56,3 +56,9 @@ fi
 
 echo "- Installing repo"
 mkdir ~/bin
+curl $REPOLINK/raw/master/repo > ~/bin/repo
+curl $REPOLINK/raw/master/shrepo > /data/data/com.termux/files/usr/bin/repo
+chmod +x ~/bin/repo
+chmod +x /data/data/com.termux/files/usr/bin/repo
+echo "- Done!"
+exit 0
