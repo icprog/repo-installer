@@ -12,28 +12,28 @@ apt update
 echo "- Checking whether required bin are installed..."
 check(){
 if [ -f "$TERMUXDIR/usr/bin/git" ]; then
- echo "git: \e[32mAvaible"
+ echo -e "git: \e[32mAvaible"
  ISGITAVAIBLE=1
 else
- echo "git: \e[31mNot Avaible"
+ echo -e "git: \e[31mNot Avaible"
  ISGITAVAIBLE=0
  ERRFOUND=1
 fi
 
 if [ -f "$TERMUXDIR/usr/bin/curl" ]; then
- echo "curl: \e[32mAvaible"
+ echo -e "curl: \e[32mAvaible"
  ISCURLAVAIBLE=1
 else
- echo "curl: \e[31mNot Avaible"
+ echo -e "curl: \e[31mNot Avaible"
  ISCURLAVAIBLE=0
  ERRFOUND=1
 fi
 
 if [ -f "$TERMUXDIR/usr/bin/python2" ]; then
- echo "Python 2.x: \e[32mAvaible"
+ echo -e "Python 2.x: \e[32mAvaible"
  ISPYAVAIBLE=1
 else
- echo "Python 2.x: \e[31mNot Avaible"
+ echo -e "Python 2.x: \e[31mNot Avaible"
  ISPYAVAIBLE=0
  ERRFOUND=1
 fi
